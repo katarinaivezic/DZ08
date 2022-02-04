@@ -1,0 +1,28 @@
+<div class="col mb-5">
+  <div class="card h-100">
+    <!-- Product image-->
+    <img class="card-img-top" style="max-height: 5%; margin-top: -50px; height: 100px;"  src="http://static1.eskypartners.com/travelguide/hotele-4-gwiazdkowe.jpg" alt="..." />
+    <!-- Product details-->
+    <div class="card-body p-4">
+      <div class="text-center">
+        <!-- Product name-->
+        <h5 class="fw-bolder">Hotel {{room.name}}</h5>
+        <!-- Product price-->
+        {{room.roomNumber}}
+        <br>Za {{room.brOsoba}} osoba
+        <br />Cena za noc - {{room.price}}eur
+        <br>{{room.brNoci}} nocenja
+        <br>
+        <br><b>Ukupna cena - {{cena()}}eur</b> 
+
+      </div>
+    </div>
+    <!-- Product actions-->
+    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+      <div class="btns d-flex justify-content-between">
+        <button (click)="izmeni()" style="background: #03b621; margin-left: 30px; " class="btn btn-primary"><i class="fa fa-edit"></i></button>
+        <button (click)="obrisi()" style="background: #db1919; margin-right: 30px;" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
